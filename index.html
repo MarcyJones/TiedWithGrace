@@ -4,176 +4,183 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tied With Grace | Handmade Custom Ties</title>
-  <meta name="description" content="Tied With Grace makes handmade custom ties that turn your look into a statement—bold, feminine, and unforgettable." />
+  <meta name="description" content="Tied With Grace makes handmade custom ties — bold, feminine statement pieces made to your vision." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="site-header" id="siteHeader">
-    <div class="wrap header-inner">
+  <!-- Top bar -->
+  <header class="topbar" id="top">
+    <div class="wrap topbar-inner">
       <a class="brand" href="#top" aria-label="Tied With Grace Home">
-        <img src="assets/assets/images/tied-with-grace-logo.png" class="brand-logo" alt="Tied With Grace logo" />
+        <img class="brand-logo" src="assets/assets/images/tied-with-grace-logo.png" alt="Tied With Grace logo">
       </a>
 
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
-        <a href="#process">Process</a>
-        <a class="nav-cta" href="#contact">Inquire</a>
+        <a href="#how">How It Works</a>
+        <a class="nav-cta" href="#contact">Custom Inquiry</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <main id="top">
-    <section class="hero" aria-label="Hero">
-      <div class="hero-bg" style="background-image:url('assets/assets/images/tied-with-grace-hero.jpg')"></div>
-      <div class="wrap hero-content">
-        <p class="tag">Handmade • Custom • Statement Pieces</p>
-        <h1>Custom ties made with <span class="accent">Grace</span> — and a little edge.</h1>
-        <p class="lead">
-          Tied With Grace creates handmade, custom ties designed for women who want their style to speak first.
-          Perfect for power dressing, special events, branding shoots, and everyday statement looks.
-        </p>
+  <section class="hero" aria-label="Hero section">
+    <div class="hero-bg" style="background-image:url('assets/assets/images/tied-with-grace-hero.jpg')"></div>
 
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#contact">Request a Custom Tie</a>
-          <a class="btn btn-ghost" href="#gallery">View Designs</a>
-        </div>
+    <div class="wrap hero-content">
+      <p class="eyebrow">Handmade • Custom • Statement Ties</p>
+
+      <h1>
+        Custom-made ties that turn your look into a <span class="accent">statement</span>.
+      </h1>
+
+      <p class="sub">
+        Tied With Grace creates handcrafted, custom ties designed around your style, your occasion, and your vision.
+        This is a showcase page — to request a custom tie, send an inquiry below.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Request a Custom Tie</a>
+        <a class="btn btn-ghost" href="#gallery">View Gallery</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About / Value props -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>What we make</h2>
-          <p>Handmade custom ties + statement accessories designed to elevate your look.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Handmade & Custom</h3>
-            <p>Each piece is crafted with intention—made to match your vibe, outfit, or event.</p>
-          </article>
-          <article class="card">
-            <h3>Luxury Feel</h3>
-            <p>Bold fabrics, clean finishes, and details that look expensive—because they are.</p>
-          </article>
-          <article class="card">
-            <h3>Style, Your Way</h3>
-            <p>Street, chic, corporate, or editorial—your tie can be the whole outfit.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Slider -->
-    <section class="section section-dark" id="gallery">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Gallery</h2>
-          <p>Swipe through a few featured looks.</p>
-        </div>
-
-        <div class="slider" aria-label="Image gallery">
-          <button class="slider-btn prev" type="button" aria-label="Previous image">‹</button>
-
-          <div class="slider-viewport">
-            <div class="slider-track" id="sliderTrack">
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-collection-signature.jpg" alt="Signature tie look" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-collection-power-dressing.jpg" alt="Power dressing tie look" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-collection-modern-grace.jpg" alt="Modern grace tie look" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-lookbook-bold.jpg" alt="Bold lookbook tie" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-lookbook-elegant.jpg" alt="Elegant lookbook tie" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-lookbook-street-style.jpg" alt="Street style tie" />
-              </figure>
-              <figure class="slide">
-                <img src="assets/assets/images/tied-with-grace-lookbook-luxury.jpg" alt="Luxury lookbook tie" />
-              </figure>
-            </div>
-          </div>
-
-          <button class="slider-btn next" type="button" aria-label="Next image">›</button>
-        </div>
-
-        <div class="dots" id="dots" aria-label="Slide indicators"></div>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section class="section" id="process">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>How custom orders work</h2>
-          <p>Simple, fast, and made for your vision.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <span class="step-num">1</span>
-            <h3>Tell us your vibe</h3>
-            <p>Color, theme, outfit, event, or inspiration photo.</p>
-          </div>
-          <div class="step">
-            <span class="step-num">2</span>
-            <h3>We design + confirm</h3>
-            <p>You approve the direction before we finish the piece.</p>
-          </div>
-          <div class="step">
-            <span class="step-num">3</span>
-            <h3>Handmade + delivered</h3>
-            <p>Your tie is crafted and ready for your moment.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / CTA -->
-    <section class="section section-cta" id="contact">
-      <div class="wrap cta">
-        <h2>Ready for a custom tie?</h2>
-        <p>Send an inquiry and we’ll respond with next steps + pricing.</p>
-
-        <!-- Update these anytime -->
-        <div class="cta-buttons">
-          <a class="btn btn-primary" href="mailto:marcia.hare@gmail.com?subject=Custom%20Tie%20Inquiry%20-%20Tied%20With%20Grace">Email to Order</a>
-          <a class="btn btn-ghost" href="#gallery">View Gallery</a>
-        </div>
-
-        <p class="fineprint">
-          Tip: In your email, include your colors, occasion, and deadline.
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What is Tied With Grace?</h2>
+        <p>
+          A boutique brand specializing in handmade custom ties for women who love bold elegance.
+          Perfect for power dressing, birthdays, photoshoots, events, and everyday style.
         </p>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="wrap footer-inner">
-        <div class="footer-left">
-          <img src="assets/assets/images/tied-with-grace-logo.png" class="footer-logo" alt="Tied With Grace logo" />
-          <p>© 2026 Tied With Grace. All rights reserved.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Handmade & Custom</h3>
+          <p>Each piece is crafted by hand, tailored to your colors, theme, and vibe.</p>
         </div>
-        <div class="footer-right">
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Inquire</a>
+        <div class="feature">
+          <h3>Premium Details</h3>
+          <p>Clean finishes, statement fabrics, and standout accents that elevate any outfit.</p>
+        </div>
+        <div class="feature">
+          <h3>Made For You</h3>
+          <p>Corporate chic, street style, or luxury — your custom tie can match your moment.</p>
         </div>
       </div>
-    </footer>
-  </main>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section-dark" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Swipe through a few featured designs. (No purchases on this site — inquiry only.)</p>
+      </div>
+
+      <div class="carousel" aria-label="Tie gallery carousel">
+        <button class="car-btn prev" type="button" aria-label="Previous">‹</button>
+
+        <div class="car-viewport" id="carViewport">
+          <div class="car-track" id="carTrack">
+            <!-- 7 images ONLY -->
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-collection-signature.jpg" alt="Signature custom tie design"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-collection-power-dressing.jpg" alt="Power dressing custom tie design"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-collection-modern-grace.jpg" alt="Modern Grace custom tie design"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-lookbook-bold.jpg" alt="Bold lookbook custom tie"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-lookbook-elegant.jpg" alt="Elegant lookbook custom tie"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-lookbook-street-style.jpg" alt="Street style custom tie"></figure>
+            <figure class="car-slide"><img src="assets/assets/images/tied-with-grace-lookbook-luxury.jpg" alt="Luxury lookbook custom tie"></figure>
+          </div>
+        </div>
+
+        <button class="car-btn next" type="button" aria-label="Next">›</button>
+      </div>
+
+      <div class="car-meta">
+        <div class="dots" id="carDots" aria-label="Slide dots"></div>
+        <p class="hint">Tip: swipe left/right on mobile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How custom orders work</h2>
+        <p>Simple process. You share your idea — we bring it to life.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Share your idea</h3>
+          <p>Tell us your colors, theme, outfit, occasion, and deadline.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Confirm the details</h3>
+          <p>We’ll reply with pricing + next steps and confirm your design direction.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Handmade & delivered</h3>
+          <p>Your custom tie is crafted and ready for your moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-cta" id="contact">
+    <div class="wrap contact">
+      <h2>Custom Tie Inquiry</h2>
+      <p class="contact-sub">
+        Fill this out and tap “Send Inquiry” — it will open your email with the message pre-filled.
+      </p>
+
+      <form class="form" id="inquiryForm">
+        <div class="grid2">
+          <label>
+            Name
+            <input type="text" id="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" id="email" placeholder="you@email.com" required>
+          </label>
+        </div>
+
+        <label>
+          What’s your custom tie idea?
+          <textarea id="details" rows="5" placeholder="Colors, occasion, deadline, inspiration…"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <a class="btn btn-ghost" href="mailto:marcia.hare@gmail.com?subject=Custom%20Tie%20Inquiry%20-%20Tied%20With%20Grace">Email Directly</a>
+        </div>
+
+        <p class="small">
+          Email: <a href="mailto:marcia.hare@gmail.com">marcia.hare@gmail.com</a> • Phone: <a href="tel:+12563618381">(256) 361-8381</a>
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img class="footer-logo" src="assets/assets/images/tied-with-grace-logo.png" alt="Tied With Grace logo">
+      <p>© 2026 Tied With Grace. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
