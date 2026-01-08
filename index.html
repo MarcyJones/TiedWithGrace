@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Tied With Grace | Custom Handmade Ties</title>
-  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Luxury Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header class="site-header">
+  <header>
     <img
       src="assets/assets/images/tied-with-grace-logo.png"
       alt="Tied With Grace Logo"
@@ -19,9 +28,10 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-
+  <section
+    class="hero"
+    style="background-image:url('assets/assets/images/tied-with-grace-lookbook-pink-knot.jpg')"
+  >
     <div class="hero-content">
       <h1>
         Custom-made ties that turn your look into a
@@ -35,43 +45,51 @@
         This is a showcase page — inquiries only.
       </p>
 
-      <a href="#contact" class="cta-button">
+      <a href="#inquiry" class="btn-primary">
         Request a Custom Tie
       </a>
     </div>
   </section>
 
   <!-- LOOKBOOK -->
-  <section class="showcase">
-    <h2>Signature Tie Designs</h2>
-    <p class="showcase-subtext">
-      A curated look at a few handcrafted statement ties.
-      Each piece is custom-made.
-    </p>
+  <section>
+    <div class="section-inner">
+      <h2 class="section-title">Signature Tie Designs</h2>
+      <p class="section-subtitle">
+        A curated selection of handcrafted statement ties.
+        Each piece is custom-made to match your vision.
+      </p>
 
-    <div class="image-grid">
-      <img src="assets/assets/images/tied-with-grace-lookbook-pink-knot.jpg" alt="Pink Statement Tie" />
-      <img src="assets/assets/images/tied-with-grace-lookbook-blue-gold.jpg" alt="Blue and Gold Tie" />
-      <img src="assets/assets/images/tied-with-grace-lookbook-red-statement.jpg" alt="Red Statement Tie" />
-      <img src="assets/assets/images/tied-with-grace-lookbook-ivory-classic.jpg" alt="Ivory Classic Tie" />
-      <img src="assets/assets/images/tied-with-grace-lookbook-blush-bow.jpg" alt="Blush Bow Tie" />
+      <div class="lookbook-grid">
+        <img src="assets/assets/images/tied-with-grace-lookbook-pink-knot.jpg" alt="Pink Statement Tie" />
+        <img src="assets/assets/images/tied-with-grace-lookbook-blue-gold.jpg" alt="Blue and Gold Tie" />
+        <img src="assets/assets/images/tied-with-grace-lookbook-red-statement.jpg" alt="Red Statement Tie" />
+        <img src="assets/assets/images/tied-with-grace-lookbook-ivory-classic.jpg" alt="Ivory Classic Tie" />
+        <img src="assets/assets/images/tied-with-grace-lookbook-blush-bow.jpg" alt="Blush Bow Tie" />
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Request a Custom Tie</h2>
-    <p>
-      Have an idea in mind? Reach out with your vision and we’ll bring it to life.
-    </p>
+  <!-- INQUIRY -->
+  <section class="inquiry" id="inquiry">
+    <div class="section-inner">
+      <h2>Request a Custom Tie</h2>
+      <p>
+        Have a color, theme, or event in mind?
+        Reach out and let’s create something made just for you.
+      </p>
 
-    <a href="mailto:your-email@example.com" class="cta-button secondary">
-      Contact Tied With Grace
-    </a>
+      <a
+        href="mailto:your-email@example.com"
+        class="btn-primary"
+      >
+        Contact Tied With Grace
+      </a>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer>
     © 2026 Tied With Grace. All rights reserved.
   </footer>
 
