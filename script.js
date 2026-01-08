@@ -1,57 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById("carTrack");
-  const viewport = document.getElementById("carViewport");
-  const dotsWrap = document.getElementById("carDots");
-  const prevBtn = document.querySelector(".car-btn.prev");
-  const nextBtn = document.querySelector(".car-btn.next");
+  const form = document.getElementById("inquiryForm");
 
-  console.log("Carousel init:", { track, viewport, prevBtn, nextBtn }); // debug
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  if (!track || !viewport || !prevBtn || !nextBtn) return;
+    const name = document.getElementById("name")?.value?.trim() || "";
+    const email = document.getElementById("email")?.value?.trim() || "";
+    const details = document.getElementById("details")?.value?.trim() || "";
 
-  const slides = Array.from(track.querySelectorAll(".car-slide"));
-  let index = 0;
+    const subject = encodeURIComponent("Custom Tie Inquiry - Tied With Grace");
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nCustom Tie Idea:\n${details}\n\n— Sent from the Tied With Grace website`
+    );
 
-  // Dots
-  let dots = [];
-  if (dotsWrap) {
-    dotsWrap.innerHTML = "";
-    dots = slides.map((_, i) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.className = "dot" + (i === 0 ? " active" : "");
-      b.addEventListener("click", () => goTo(i));
-      dotsWrap.appendChild(b);
-      return b;
-    });
-  }
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach((d, i) => d.classList.toggle("active", i === index));
-  }
-
-  function goTo(i) {
-    index = (i + slides.length) % slides.length;
-    update();
-  }
-
-  prevBtn.addEventListener("click", () => goTo(index - 1));
-  nextBtn.addEventListener("click", () => goTo(index + 1));
-
-  // Swipe
-  let startX = 0;
-  viewport.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
+    window.location.href = `mailto:marcia.hare@gmail.com?subject=${subject}&body=${body}`;
   });
-
-  viewport.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-    if (Math.abs(diff) > 40) {
-      diff < 0 ? goTo(index + 1) : goTo(index - 1);
-    }
-  });
-
-  update();
 });
