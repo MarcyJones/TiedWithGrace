@@ -56,7 +56,6 @@ a{color:inherit}
 .hero-bg::after{
   content:"";
   position:absolute;inset:0;
-  /* DARK overlay so the white text is readable */
   background:
     radial-gradient(70% 55% at 50% 35%, rgba(255,95,162,.20), rgba(0,0,0,.85)),
     linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.86));
@@ -135,45 +134,52 @@ a{color:inherit}
 .feature h3{margin:0 0 8px;font-family:var(--serif)}
 .feature p{margin:0;color:var(--muted);line-height:1.7}
 
-/* Carousel */
-.carousel{
-  position:relative;
+/* Signature blended image section */
+.signature-card{
   border:1px solid var(--line);
   border-radius:var(--radius);
   overflow:hidden;
   background:rgba(255,255,255,.03);
   box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  min-height:520px;
 }
-.car-viewport{overflow:hidden}
-.car-track{display:flex;transition:transform .45s ease;will-change:transform}
-.car-slide{min-width:100%;margin:0;aspect-ratio:4/5;background:#000}
-.car-slide img{width:100%;height:100%;object-fit:cover}
-
-.car-btn{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:44px;height:44px;border-radius:999px;
-  border:1px solid rgba(255,255,255,.22);
-  background:rgba(0,0,0,.45);
-  color:var(--text);
-  font-size:28px;line-height:0;
-  z-index:5;
+.signature-image{
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  filter:saturate(1.05) contrast(1.02);
 }
-.car-btn:hover{background:rgba(0,0,0,.65)}
-.car-btn.prev{left:12px}
-.car-btn.next{right:12px}
-
-.car-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
-.hint{margin:0;color:rgba(246,243,248,.55);font-size:12px}
-
-.dots{display:flex;gap:8px}
-.dot{
-  width:8px;height:8px;border-radius:999px;
-  background:rgba(255,255,255,.22);
-  border:1px solid rgba(255,255,255,.18);
+.signature-image::after{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(70% 60% at 35% 40%, rgba(255,95,162,.28), rgba(0,0,0,.86)),
+    linear-gradient(to right, rgba(0,0,0,.10), rgba(0,0,0,.85));
 }
-.dot.active{
-  background:linear-gradient(135deg, var(--pink), var(--pink2));
-  border-color:rgba(255,255,255,.24);
+.signature-content{
+  padding:22px 18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.signature-content h2{
+  margin:0 0 10px;
+  font-family:var(--serif);
+  font-size:clamp(24px, 3.2vw, 38px);
+}
+.signature-content p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.8;
+  font-size:16px;
+}
+.signature-actions{
+  margin-top:16px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
 /* Steps */
@@ -235,8 +241,10 @@ textarea{resize:vertical}
 
 /* Mobile */
 @media (max-width: 900px){
-  .nav{display:none;} /* clean mobile look (we can add a menu later) */
+  .nav{display:none;}
   .features{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
+  .signature-card{grid-template-columns:1fr}
+  .signature-image{min-height:360px}
 }
