@@ -1,69 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tied With Grace — Custom-Made Ties</title>
+  <meta name="description" content="Handcrafted custom-made ties. Showcase page — inquiries only." />
 
-  <title>Tied With Grace | Custom Handmade Ties</title>
+  <!-- Fonts (add once) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Luxury Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <img src="assets/assets/images/logo.png" alt="Tied With Grace Logo" class="logo">
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Use your logo file path below -->
+      <a class="brand" href="#top" aria-label="Tied With Grace home">
+        <img
+          class="brand-logo"
+          src="assets/assets/images/logo.png"
+          alt="Tied With Grace logo"
+          onerror="this.style.display='none'; this.parentElement.classList.add('brand-fallback');"
+        />
+        <span class="brand-fallback-text">Tied With Grace</span>
+      </a>
+
+      <a class="topbar-cta" href="#contact">Request a Custom Tie</a>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" style="background-image:url('assets/assets/images/tied-with-grace-lookbook-bold.jpg');">
-    <div class="hero-overlay"></div>
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
 
-    <div class="hero-content">
-      <h1>
-        Custom-made ties<br>
-        that turn your look into a <span>statement</span>.
-      </h1>
+      <!-- HERO IMAGE: you said you want this one -->
+      <img
+        class="hero-photo"
+        src="assets/assets/images/tied-with-grace-lookbook-bold.jpg"
+        alt="Tied With Grace lookbook"
+      />
 
-      <p>
-        Tied With Grace creates handcrafted, custom ties designed around your style,
-        your occasion, and your vision.
-        <br><br>
-        This is a showcase page — inquiries only.
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="kicker">HANDMADE • CUSTOM • STATEMENT TIES</p>
+
+        <h1>
+          Custom-made ties<br />
+          that turn your look into a <span class="accent">statement</span>.
+        </h1>
+
+        <p class="subcopy">
+          Tied With Grace creates handcrafted, custom ties designed around your style,
+          your occasion, and your vision.
+          <br /><br />
+          This is a showcase page — inquiries only.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a Custom Tie</a>
+          <a class="btn btn-ghost" href="#lookbook">View Lookbook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK (5 images) -->
+    <section id="lookbook" class="section">
+      <div class="section-head">
+        <h2>Signature Tie Designs</h2>
+        <p class="muted">
+          A curated look at a few handcrafted statement ties. Each piece is custom-made.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- IMPORTANT: These src paths MUST match your exact filenames -->
+        <figure class="card">
+          <img src="assets/assets/images/twg-lookbook-01.jpg" alt="Signature tie design 01" />
+        </figure>
+
+        <figure class="card">
+          <img src="assets/assets/images/twg-lookbook-02.jpg" alt="Signature tie design 02" />
+        </figure>
+
+        <figure class="card">
+          <img src="assets/assets/images/twg-lookbook-03.jpg" alt="Signature tie design 03" />
+        </figure>
+
+        <figure class="card">
+          <img src="assets/assets/images/twg-lookbook-04.jpg" alt="Signature tie design 04" />
+        </figure>
+
+        <figure class="card">
+          <img src="assets/assets/images/twg-lookbook-05.jpg" alt="Signature tie design 05" />
+        </figure>
+      </div>
+
+      <p class="note">
+        Tip: If you still see “?” boxes, it’s 100% a filename/path mismatch (or the file wasn’t uploaded to that folder).
       </p>
+    </section>
 
-      <a href="mailto:tiedwithgracebiz@gmail.com" class="cta-button">
-        Contact Seller
-      </a>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="contact-box">
+        <h2>Request a Custom Tie</h2>
+        <p class="muted">
+          Have an idea in mind? Reach out with your vision and we’ll bring it to life.
+        </p>
 
-  <!-- LOOKBOOK -->
-  <section class="showcase">
-    <h2>Signature Tie Designs</h2>
-    <p class="showcase-subtext">
-      A curated look at handcrafted statement ties.
-      Each piece is custom-made.
-    </p>
+        <!-- ✅ FIXED EMAIL RIGHT HERE -->
+        <a class="btn btn-outline"
+           href="mailto:tiedwithgracebiz@gmail.com?subject=Custom%20Tie%20Inquiry%20—%20Tied%20With%20Grace">
+          Contact Tied With Grace
+        </a>
 
-    <div class="image-grid">
-      <img src="assets/assets/images/twg-lookbook-pink-bow.jpg" alt="Pink Bow Tie Design">
-      <img src="assets/assets/images/twg-lookbook-yellow-blue.jpg" alt="Yellow and Blue Tie">
-      <img src="assets/assets/images/twg-lookbook-red-gold.jpg" alt="Red and Gold Tie">
-      <img src="assets/assets/images/twg-lookbook-green-pearl.jpg" alt="Green Pearl Tie">
-      <img src="assets/assets/images/twg-lookbook-blush-satin.jpg" alt="Blush Satin Bow">
-    </div>
-  </section>
+        <p class="tiny muted">
+          Email: <a class="link" href="mailto:tiedwithgracebiz@gmail.com">tiedwithgracebiz@gmail.com</a>
+        </p>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2026 Tied With Grace. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>© 2026 Tied With Grace. All rights reserved.</p>
+    </footer>
+  </main>
 
 </body>
 </html>
