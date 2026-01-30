@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tied With Grace — Custom-Made Ties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tied With Grace | Custom-Made Ties</title>
   <meta name="description" content="Handcrafted custom-made ties. Showcase page — inquiries only." />
 
   <!-- Fonts (add once) -->
@@ -15,51 +15,36 @@
 </head>
 
 <body>
-
-  <!-- Top Bar -->
+  <!-- Top bar -->
   <header class="topbar">
-    <div class="topbar-inner">
-      <!-- Use your logo file path below -->
-      <a class="brand" href="#top" aria-label="Tied With Grace home">
-        <img
-          class="brand-logo"
-          src="assets/assets/images/logo.png"
-          alt="Tied With Grace logo"
-          onerror="this.style.display='none'; this.parentElement.classList.add('brand-fallback');"
-        />
-        <span class="brand-fallback-text">Tied With Grace</span>
-      </a>
-
-      <a class="topbar-cta" href="#contact">Request a Custom Tie</a>
-    </div>
+    <a class="brand" href="#top" aria-label="Tied With Grace Home">
+      <img
+        class="brand-logo"
+        src="assets/assets/images/tied-with-grace-logo.png"
+        alt="Tied With Grace logo"
+        loading="eager"
+      />
+    </a>
+    <a class="topbar-cta" href="#contact">Request a Custom Tie</a>
   </header>
 
   <!-- Hero -->
   <main id="top">
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
 
-      <!-- HERO IMAGE: you said you want this one -->
-      <img
-        class="hero-photo"
-        src="assets/assets/images/tied-with-grace-lookbook-bold.jpg"
-        alt="Tied With Grace lookbook"
-      />
+      <div class="container hero-content">
+        <p class="eyebrow">HANDMADE • CUSTOM • STATEMENT TIES</p>
 
-      <div class="hero-overlay" aria-hidden="true"></div>
-
-      <div class="hero-content">
-        <p class="kicker">HANDMADE • CUSTOM • STATEMENT TIES</p>
-
-        <h1>
-          Custom-made ties<br />
-          that turn your look into a <span class="accent">statement</span>.
+        <h1 class="hero-title">
+          Custom-made ties that turn your look into a <span>statement</span>.
         </h1>
 
-        <p class="subcopy">
+        <p class="hero-subtitle">
           Tied With Grace creates handcrafted, custom ties designed around your style,
           your occasion, and your vision.
-          <br /><br />
+          <br><br>
           This is a showcase page — inquiries only.
         </p>
 
@@ -70,67 +55,73 @@
       </div>
     </section>
 
-    <!-- LOOKBOOK (5 images) -->
+    <!-- Lookbook -->
     <section id="lookbook" class="section">
-      <div class="section-head">
-        <h2>Signature Tie Designs</h2>
-        <p class="muted">
-          A curated look at a few handcrafted statement ties. Each piece is custom-made.
-        </p>
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Signature Tie Designs</h2>
+          <p class="section-subtitle">
+            A curated look at a few handcrafted statement ties. Each piece is custom-made.
+          </p>
+        </div>
+
+        <div class="lookbook-grid">
+          <figure class="card">
+            <img src="assets/assets/images/tied-with-grace-lookbook-pink-knot.jpg" alt="Pink Knot Tie" loading="lazy">
+            <figcaption>Pink Knot Tie</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/assets/images/tied-with-grace-lookbook-blue-gold.jpg" alt="Blue & Gold Tie" loading="lazy">
+            <figcaption>Blue & Gold Tie</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/assets/images/tied-with-grace-lookbook-red-statement.jpg" alt="Red Statement Tie" loading="lazy">
+            <figcaption>Red Statement Tie</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/assets/images/tied-with-grace-lookbook-ivory-classic.jpg" alt="Ivory Classic Tie" loading="lazy">
+            <figcaption>Ivory Classic Tie</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="assets/assets/images/tied-with-grace-lookbook-blush-bow.jpg" alt="Blush Bow Tie" loading="lazy">
+            <figcaption>Blush Bow Tie</figcaption>
+          </figure>
+        </div>
       </div>
-
-      <div class="cards-grid">
-        <!-- IMPORTANT: These src paths MUST match your exact filenames -->
-        <figure class="card">
-          <img src="assets/assets/images/twg-lookbook-01.jpg" alt="Signature tie design 01" />
-        </figure>
-
-        <figure class="card">
-          <img src="assets/assets/images/twg-lookbook-02.jpg" alt="Signature tie design 02" />
-        </figure>
-
-        <figure class="card">
-          <img src="assets/assets/images/twg-lookbook-03.jpg" alt="Signature tie design 03" />
-        </figure>
-
-        <figure class="card">
-          <img src="assets/assets/images/twg-lookbook-04.jpg" alt="Signature tie design 04" />
-        </figure>
-
-        <figure class="card">
-          <img src="assets/assets/images/twg-lookbook-05.jpg" alt="Signature tie design 05" />
-        </figure>
-      </div>
-
-      <p class="note">
-        Tip: If you still see “?” boxes, it’s 100% a filename/path mismatch (or the file wasn’t uploaded to that folder).
-      </p>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-contact">
-      <div class="contact-box">
-        <h2>Request a Custom Tie</h2>
-        <p class="muted">
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2 class="contact-title">Request a Custom Tie</h2>
+        <p class="contact-subtitle">
           Have an idea in mind? Reach out with your vision and we’ll bring it to life.
         </p>
 
-        <!-- ✅ FIXED EMAIL RIGHT HERE -->
+        <!-- ✅ This is the button that must email the correct address -->
         <a class="btn btn-outline"
-           href="mailto:tiedwithgracebiz@gmail.com?subject=Custom%20Tie%20Inquiry%20—%20Tied%20With%20Grace">
-          Contact Tied With Grace
+           href="mailto:tiedwithgracebiz@gmail.com?subject=Custom%20Tie%20Inquiry%20-%20Tied%20With%20Grace">
+          Contact Seller
         </a>
 
-        <p class="tiny muted">
-          Email: <a class="link" href="mailto:tiedwithgracebiz@gmail.com">tiedwithgracebiz@gmail.com</a>
+        <p class="contact-note">
+          Email: <a href="mailto:tiedwithgracebiz@gmail.com">tiedwithgracebiz@gmail.com</a>
         </p>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© 2026 Tied With Grace. All rights reserved.</p>
+      <div class="container footer-inner">
+        <p>© 2026 Tied With Grace. All rights reserved.</p>
+      </div>
     </footer>
   </main>
 
+  <!-- Leave script empty if you want -->
+  <script src="script.js"></script>
 </body>
 </html>
